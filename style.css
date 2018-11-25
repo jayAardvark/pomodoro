@@ -1,0 +1,136 @@
+body {
+/* background-color: #008800;*/
+}
+#container-div {
+ padding: 90px;
+  /*width: 70vw;
+  height: 80vh;
+  margin: auto;*/
+
+}
+.big-grid-container{
+  background-color: red;
+  //box-shadow: 7px 7px #333;
+  border-radius: 20px;
+  width: 600px;
+  height: 400px;
+  display:grid;
+  justify-items: center;
+  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "sess sess brk brk"
+    ". time time ."
+    ". btns btns .";
+}
+.session-container{
+  grid-area: sess;
+  justify-items: center;
+  align-items: center; /*do for break*/
+  background-color: red;
+  
+}
+.break-container{
+  grid-area: brk;
+  justify-items: center;
+  align-items: center;
+  background-color:white;
+}
+.time-container{
+  grid-area: time;
+  justify-items: center;
+  background-color: white;
+}
+.buttons-container{
+  grid-area: btns;
+  justify-items: center;
+  align-items: center;
+  background-color: red;
+  
+}
+.session-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "lbl lbl lbl"
+    "dec length inc";
+}
+#session-label{
+  grid-area: lbl;
+  color: white;
+}
+#session-decrement{
+  grid-area: dec;
+}
+#session-increment{
+  grid-area: inc;
+}
+#session-length{
+  grid-area: length;
+  color: white;
+  font-size: 30px;
+}
+.break-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "lbl lbl lbl"
+    "dec length inc";
+  background-color: red;
+}
+#break-label{
+  grid-area: lbl;
+  color: white;
+}
+#break-decrement{
+  grid-area: dec;
+}
+#break-increment{
+  grid-area: inc;
+}
+#break-length{
+  grid-area: length;
+  color: white;
+  font-size: 30px;
+}
+.time-container{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: .5fr 1fr;
+  grid-template-areas:
+    "label"
+    "time";
+  background-color: red;
+}
+#timer-label{
+  grid-area:label;
+  background-color: red;
+  color: white;
+  font-size: 4em;
+}
+#time-left{
+  grid-area: time;
+  background-color: red;
+  color: white;
+  font-size: 4em;
+}
+.buttons-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "play"
+    "reset"
+}
+#start_stop{
+  grid-area: play;
+}
+#reset{
+  grid-area: reset;
+}
+button {
+ // box-shadow: 2px 2px #333;
+}
