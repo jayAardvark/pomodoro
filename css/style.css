@@ -134,3 +134,9 @@ body {
 button {
  // box-shadow: 2px 2px #333;
 }
+#project-details {
+  width: 600px;
+  margin: auto;
+  text-align: left;
+  padding-top: 10px;
+}
